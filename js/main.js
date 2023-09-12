@@ -50,6 +50,34 @@ jQuery(document).ready(function ($) {
     },
   });
 
+  new Swiper('.clients-slider-rolamentos', {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    slidesPerView: 'auto',
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+    },
+  });
+
   // Initiate the wowjs animation library
   new WOW().init();
 });
